@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.result-container {
+    width: 100%;
+    max-width: 550px;
+}
+
+.result-card {
+    background: white;
+    padding: 45px 30px;
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.result-icon {
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.success-card .result-icon {
+    background: #dcfce7;
+    color: #22c55e;
+}
+
+.failure-card .result-icon {
+    background: #fee2e2;
+    color: #ef4444;
+}
+
+.result-card h1 {
+    font-size: 32px;
+    margin-bottom: 12px;
+    color: #222;
+}
+
+.result-message {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.score {
+    font-size: 22px;
+    font-weight: bold;
+    color: #4f46e5;
+
+    background: #f5f3ff;
+
+    padding: 15px;
+    border-radius: 8px;
+
+    margin-bottom: 20px;
+}
+
+.result-subtitle {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.5;
+
+    margin-bottom: 30px;
+}
+
+.result-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.restart-btn,
+.home-btn {
+    border: none;
+
+    padding: 13px 24px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.restart-btn {
+    background: #4f46e5;
+    color: white;
+}
+
+.restart-btn:hover {
+    background: #3730a3;
+}
+
+.home-btn {
+    background: #e5e7eb;
+    color: #333;
+}
+
+.home-btn:hover {
+    background: #d1d5db;
+}
+
+@media (max-width: 500px) {
+
+    .result-card {
+        padding: 35px 20px;
+    }
+
+    .result-card h1 {
+        font-size: 27px;
+    }
+
+    .result-message {
+        font-size: 16px;
+    }
+
+    .result-actions {
+        flex-direction: column;
+    }
+
+    .restart-btn,
+    .home-btn {
+        width: 100%;
+    }
+}

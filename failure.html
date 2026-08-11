@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Failed</title>
+    <link rel="stylesheet" href="result.css">
+</head>
+
+<body>
+
+    <main class="result-container">
+        <div class="result-card failure-card">
+
+            <div class="result-icon">✕</div>
+
+            <h1>Quiz Failed</h1>
+
+            <p class="result-message">
+                Don't worry! You can try again.
+            </p>
+
+            <div class="score">
+                Your Score: <span id="score">0</span>/5
+            </div>
+
+            <p class="result-subtitle">
+                Keep practicing JavaScript and improve your score.
+            </p>
+
+            <div class="result-actions">
+                <button onclick="restartQuiz()" class="restart-btn">
+                    Try Again
+                </button>
+
+                <button onclick="goHome()" class="home-btn">
+                    Home
+                </button>
+            </div>
+
+        </div>
+    </main>
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="quiz-container">
+
+        <header class="quiz-header">
+            <h1>JavaScript Quiz</h1>
+            <p>Test your JavaScript knowledge</p>
+        </header>
+
+        <section class="quiz-card">
+
+            <div class="quiz-info">
+                <span id="question-number">Question 1 of 5</span>
+                <span id="timer"></span>
+            </div>
+
+            <div class="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+
+            <div class="question-section">
+                <h2 id="question">
+                    What does JavaScript primarily add to a webpage?
+                </h2>
+            </div>
+
+            <div id="answers" class="answers">
+            </div>
+
+            <div class="quiz-actions">
+                <button id="next-btn" class="next-btn" onclick="next()">
+                    Next Question
+                </button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

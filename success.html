@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Passed</title>
+    <link rel="stylesheet" href="result.css">
+</head>
+
+<body>
+
+    <main class="result-container">
+        <div class="result-card success-card">
+
+            <div class="result-icon">✓</div>
+
+            <h1>Congratulations!</h1>
+
+            <p class="result-message">
+                You passed the JavaScript Quiz!
+            </p>
+
+            <div class="score">
+                Your Score: <span id="score">0</span>/5
+            </div>
+
+            <p class="result-subtitle">
+                Great job! You have a good understanding of JavaScript.
+            </p>
+
+            <div class="result-actions">
+                <button onclick="restartQuiz()" class="restart-btn">
+                    Try Again
+                </button>
+
+                <button onclick="goHome()" class="home-btn">
+                    Home
+                </button>
+            </div>
+
+        </div>
+    </main>
+
+    
+
+</body>
+</html>
