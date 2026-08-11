@@ -248,3 +248,4 @@ var time = setInterval(timer, 1000);
 
 
 
+quiz();
