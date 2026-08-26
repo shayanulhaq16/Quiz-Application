@@ -10,27 +10,57 @@ const questions = [
         correctAnswer: "const"
     },
     {
-        question: "What is the correct way to write a function in JavaScript?",
+        question: "Which keyword is used to declare a block-scoped variable?",
         answers: [
-            "function myFunction() {}",
-            "function: myFunction() {}",
-            "create myFunction() {}",
-            "def myFunction() {}"
+            "let",
+            "var",
+            "define",
+            "new"
         ],
-        correctAnswer: "function myFunction() {}"
+        correctAnswer: "let"
     },
     {
-        question: "Which method is used to add an element to the end of an array?",
+        question: "Which symbol is used for a single-line comment in JavaScript?",
         answers: [
-            "pop()",
-            "push()",
-            "shift()",
-            "unshift()"
+            "//",
+            "/*",
+            "#",
+            "<!--"
         ],
-        correctAnswer: "push()"
+        correctAnswer: "//"
     },
     {
-        question: "Which operator is used for strict equality in JavaScript?",
+        question: "Which data type is used to store text?",
+        answers: [
+            "Number",
+            "String",
+            "Boolean",
+            "Object"
+        ],
+        correctAnswer: "String"
+    },
+    {
+        question: "Which data type can have true or false as its value?",
+        answers: [
+            "String",
+            "Number",
+            "Boolean",
+            "Array"
+        ],
+        correctAnswer: "Boolean"
+    },
+    {
+        question: "Which operator is used for addition?",
+        answers: [
+            "+",
+            "-",
+            "*",
+            "/"
+        ],
+        correctAnswer: "+"
+    },
+    {
+        question: "Which operator is used for strict equality?",
         answers: [
             "==",
             "=",
@@ -40,14 +70,24 @@ const questions = [
         correctAnswer: "==="
     },
     {
-        question: "What does typeof null return in JavaScript?",
+        question: "Which operator is used to assign a value to a variable?",
         answers: [
-            "null",
-            "undefined",
-            "object",
-            "string"
+            "==",
+            "=",
+            "===",
+            "=>"
         ],
-        correctAnswer: "object"
+        correctAnswer: "="
+    },
+    {
+        question: "Which method adds an element to the end of an array?",
+        answers: [
+            "pop()",
+            "push()",
+            "shift()",
+            "unshift()"
+        ],
+        correctAnswer: "push()"
     },
     {
         question: "Which method removes the last element from an array?",
@@ -60,54 +100,14 @@ const questions = [
         correctAnswer: "pop()"
     },
     {
-        question: "Which method converts a JSON string into a JavaScript object?",
+        question: "Which method adds an element to the beginning of an array?",
         answers: [
-            "JSON.stringify()",
-            "JSON.parse()",
-            "JSON.convert()",
-            "JSON.object()"
+            "push()",
+            "pop()",
+            "shift()",
+            "unshift()"
         ],
-        correctAnswer: "JSON.parse()"
-    },
-    {
-        question: "Which keyword is used to handle errors in JavaScript?",
-        answers: [
-            "try...catch",
-            "error...handle",
-            "check...error",
-            "catch...error"
-        ],
-        correctAnswer: "try...catch"
-    },
-    {
-        question: "Which method is used to create a new array by applying a function to every element?",
-        answers: [
-            "filter()",
-            "forEach()",
-            "map()",
-            "reduce()"
-        ],
-        correctAnswer: "map()"
-    },
-    {
-        question: "What does the === operator check?",
-        answers: [
-            "Only value",
-            "Only type",
-            "Value and type",
-            "Variable name"
-        ],
-        correctAnswer: "Value and type"
-    },
-    {
-        question: "Which keyword refers to the current object in JavaScript?",
-        answers: [
-            "self",
-            "this",
-            "current",
-            "object"
-        ],
-        correctAnswer: "this"
+        correctAnswer: "unshift()"
     },
     {
         question: "Which method removes the first element from an array?",
@@ -118,12 +118,293 @@ const questions = [
             "slice()"
         ],
         correctAnswer: "shift()"
+    },
+    {
+        question: "Which property is used to find the number of elements in an array?",
+        answers: [
+            "size",
+            "length",
+            "count",
+            "items"
+        ],
+        correctAnswer: "length"
+    },
+    {
+        question: "What is the correct way to write a function?",
+        answers: [
+            "function myFunction() {}",
+            "function: myFunction() {}",
+            "create myFunction() {}",
+            "def myFunction() {}"
+        ],
+        correctAnswer: "function myFunction() {}"
+    },
+    {
+        question: "Which keyword is used to return a value from a function?",
+        answers: [
+            "send",
+            "return",
+            "output",
+            "value"
+        ],
+        correctAnswer: "return"
+    },
+    {
+        question: "Which statement is used to make a decision in JavaScript?",
+        answers: [
+            "if",
+            "loop",
+            "check",
+            "choose"
+        ],
+        correctAnswer: "if"
+    },
+    {
+        question: "Which statement is used when the if condition is false?",
+        answers: [
+            "else",
+            "otherwise",
+            "false",
+            "default"
+        ],
+        correctAnswer: "else"
+    },
+    {
+        question: "Which loop is commonly used to repeat code a specific number of times?",
+        answers: [
+            "for",
+            "if",
+            "switch",
+            "try"
+        ],
+        correctAnswer: "for"
+    },
+    {
+        question: "Which loop runs while a condition is true?",
+        answers: [
+            "for",
+            "while",
+            "switch",
+            "if"
+        ],
+        correctAnswer: "while"
+    },
+    {
+        question: "Which keyword stops a loop?",
+        answers: [
+            "stop",
+            "exit",
+            "break",
+            "end"
+        ],
+        correctAnswer: "break"
+    },
+    {
+        question: "Which keyword skips the current iteration of a loop?",
+        answers: [
+            "skip",
+            "continue",
+            "next",
+            "pass"
+        ],
+        correctAnswer: "continue"
+    },
+    {
+        question: "Which object is used to work with the browser's webpage?",
+        answers: [
+            "HTML",
+            "DOM",
+            "CSS",
+            "JSON"
+        ],
+        correctAnswer: "DOM"
+    },
+    {
+        question: "Which method selects an element by its ID?",
+        answers: [
+            "getElementById()",
+            "getById()",
+            "selectId()",
+            "queryId()"
+        ],
+        correctAnswer: "getElementById()"
+    },
+    {
+        question: "Which method can select an element using a CSS selector?",
+        answers: [
+            "querySelector()",
+            "getSelector()",
+            "selectCSS()",
+            "findElement()"
+        ],
+        correctAnswer: "querySelector()"
+    },
+    {
+        question: "Which property is commonly used to change the text or HTML inside an element?",
+        answers: [
+            "innerHTML",
+            "innerTextOnly",
+            "htmlValue",
+            "contentHTML"
+        ],
+        correctAnswer: "innerHTML"
+    },
+    {
+        question: "Which property is used to get or set the value of an input?",
+        answers: [
+            "text",
+            "value",
+            "input",
+            "data"
+        ],
+        correctAnswer: "value"
+    },
+    {
+        question: "Which method is used to print something in the browser console?",
+        answers: [
+            "console.log()",
+            "print()",
+            "console.print()",
+            "log.console()"
+        ],
+        correctAnswer: "console.log()"
+    },
+    {
+        question: "Which function converts a string into an integer?",
+        answers: [
+            "parseInt()",
+            "toString()",
+            "parseString()",
+            "int()"
+        ],
+        correctAnswer: "parseInt()"
+    },
+    {
+        question: "Which method converts a JavaScript value into a string?",
+        answers: [
+            "toString()",
+            "parseInt()",
+            "stringifyText()",
+            "convert()"
+        ],
+        correctAnswer: "toString()"
+    },
+    {
+        question: "What does typeof return?",
+        answers: [
+            "The value of a variable",
+            "The data type of a value",
+            "The variable name",
+            "The size of a value"
+        ],
+        correctAnswer: "The data type of a value"
+    },
+    {
+        question: "Which value represents the absence of a value?",
+        answers: [
+            "null",
+            "empty",
+            "zero",
+            "false"
+        ],
+        correctAnswer: "null"
+    },
+    {
+        question: "Which value means a variable has not been assigned a value?",
+        answers: [
+            "null",
+            "undefined",
+            "empty",
+            "none"
+        ],
+        correctAnswer: "undefined"
+    },
+    {
+        question: "Which keyword creates a new object?",
+        answers: [
+            "create",
+            "object",
+            "new",
+            "make"
+        ],
+        correctAnswer: "new"
+    },
+    {
+        question: "Which brackets are used to create an array?",
+        answers: [
+            "()",
+            "{}",
+            "[]",
+            "<>"
+        ],
+        correctAnswer: "[]"
+    },
+    {
+        question: "Which brackets are used to create an object?",
+        answers: [
+            "()",
+            "{}",
+            "[]",
+            "<>"
+        ],
+        correctAnswer: "{}"
+    },
+    {
+        question: "Which method converts a JSON string into a JavaScript object?",
+        answers: [
+            "JSON.parse()",
+            "JSON.stringify()",
+            "JSON.convert()",
+            "JSON.object()"
+        ],
+        correctAnswer: "JSON.parse()"
+    },
+    {
+        question: "Which method converts a JavaScript object into a JSON string?",
+        answers: [
+            "JSON.parse()",
+            "JSON.stringify()",
+            "JSON.convert()",
+            "JSON.toObject()"
+        ],
+        correctAnswer: "JSON.stringify()"
+    },
+    {
+        question: "Which method creates a new array by changing every element?",
+        answers: [
+            "filter()",
+            "forEach()",
+            "map()",
+            "find()"
+        ],
+        correctAnswer: "map()"
+    },
+    {
+        question: "Which method creates a new array containing elements that pass a condition?",
+        answers: [
+            "map()",
+            "filter()",
+            "reduce()",
+            "push()"
+        ],
+        correctAnswer: "filter()"
+    },
+    {
+        question: "Which function is used to run code after a specified amount of time?",
+        answers: [
+            "setTimeout()",
+            "setTime()",
+            "wait()",
+            "delay()"
+        ],
+        correctAnswer: "setTimeout()"
     }
 ];
 
 var questionDisplay = document.getElementById("question");
 var questionCounter = document.getElementById("question-number");
 var optionsDisplay = document.getElementById("answers");
+
 
 
 // This is created for checking answers.
@@ -167,47 +448,51 @@ function quiz() {
 }
 
 function next() {
-
-
-
-
+    
+    
+    
+    
     if (count < questions.length && selectedItemForAnswer !== '') {
         if (selectedItemForAnswer === questions[count].correctAnswer) {
             succeed++;
             count++;
-            console.log("🚀 ~ next ~ succeed:", succeed);
             selectedItemForAnswer = '';
-            if(count === questions.length){
-                
+            if (count === questions.length) {
+
                 result();
-            }else{
+            } else {
                 quiz();
             }
-            
+
         } else {
             failure++;
             count++;
 
             selectedItemForAnswer = '';
-            if(count === questions.length){
-                
+            if (count === questions.length) {
+
                 result();
-            }else{
+            } else {
 
                 quiz();
+            }
         }
-        }
-    } 
+    }
 
 
 }
 
-function result(){
-    if(((succeed/questions.length)*100) >= 70){
+function result() {
+
+    localStorage.setItem("sScore", succeed);
+    localStorage.setItem("fScore", failure);
+
+    if (((succeed / questions.length) * 100) >= 70) {
         window.location.replace("success.html");
-    }else{
-            window.location.replace('failure.html');
-        }   
+    } else {
+        window.location.replace('failure.html');
+    }
+
 }
 
 
@@ -223,25 +508,25 @@ var seconds = 0;
 var minutes = 0;
 
 
-function timer(){
-    if(seconds < 60){
+function timer() {
+    if (seconds < 60) {
         timeDisplay.innerHTML = `Time: ${minutes}: ${seconds}s`
         seconds++
-    }else{
+    } else {
         minutes++
         seconds = 0;
         timeDisplay.innerHTML = `Time: ${minutes}: ${seconds}s`
         seconds++
     }
-    
-    
-    if(minutes === 40){
+
+
+    if (minutes === 40) {
         clearInterval(time);
         timeDisplay.innerHTML = `Time: 0: 0s`
         result()
     }
-    
-    
+
+
 }
 var time = setInterval(timer, 1000);
 
