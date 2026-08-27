@@ -22,10 +22,10 @@ const questions = [
     {
         question: "Which symbol is used for a single-line comment in JavaScript?",
         answers: [
+            "!-->",
             "//",
             "/*",
             "#",
-            "<!--"
         ],
         correctAnswer: "//"
     },
@@ -414,7 +414,11 @@ var count = 0;
 
 
 var succeed = 0;
-var failure = 0;
+
+
+var progressBar = document.querySelector("#progress-bar");
+var percentageOfWidth = 0;
+
 
 
 
@@ -456,6 +460,7 @@ function next() {
         if (selectedItemForAnswer === questions[count].correctAnswer) {
             succeed++;
             count++;
+
             selectedItemForAnswer = '';
             if (count === questions.length) {
 
@@ -465,7 +470,6 @@ function next() {
             }
 
         } else {
-            failure++;
             count++;
 
             selectedItemForAnswer = '';
@@ -480,12 +484,14 @@ function next() {
     }
 
 
+    percentageOfWidth += 100 / questions.length;
+    progressBar.style.width = percentageOfWidth + "%";
+
 }
 
 function result() {
 
-    localStorage.setItem("sScore", succeed);
-    localStorage.setItem("fScore", failure);
+    localStorage.setItem("Score", succeed);
 
     if (((succeed / questions.length) * 100) >= 70) {
         window.location.replace("success.html");

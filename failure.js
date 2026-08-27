@@ -1,5 +1,5 @@
 const scoreDisplay = document.querySelector("#score");
 
-var realSuccessScore = localStorage.getItem("fScore");
+var failureScore = localStorage.getItem("Score");
 
-scoreDisplay.innerHTML = realSuccessScore;
+scoreDisplay.innerHTML = failureScore;
